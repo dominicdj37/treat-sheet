@@ -7,8 +7,41 @@ background-color: #2e1d00 !important;
 }
 
 .btn-colorz {
+    margin-bottom: 2%;
     background-color: #2e1d00 !important;
 }
+
+.btn-colorx {
+    background-color: #ffffff !important;
+}
+
+.light-color {
+    color: #ffffff;
+}
+
+
+.party-list-div{
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.fill-img {
+    background: url('header_image.jpg');
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title_text {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
 
 // .navbar-brand {
 
