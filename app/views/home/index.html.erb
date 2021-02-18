@@ -1,8 +1,10 @@
+<div class="wrapper">
 
-
+<div class="create-party">
+    <a> <%= link_to "Host a party", create_party_path, class:"btn btn-dark btn-block btn-bg-dark" %> </a>
+</div>
 
 <div class="party-list-div">
-    <a> <%= link_to "Host a party", create_party_path, class:"btn btn-dark btn-block btn-colorz" %> </a>
 <table class="table table-light table-hover">
   <thead class="table-dark">
     <tr>
@@ -22,16 +24,13 @@
     <% end %>
   </tbody>
 </table>
+
+
+
+
 </div>
 
 
-<div class="card my-create-card" style="width: 18rem;">
-  
-  <div class="card-body">
-    <h5 class="card-title light-color">Do I smell a party?</h5>
-    <p class="card-text light-color">Man up and take responsibilty, Pay your debts with a party!</p>
-    <a> <%= link_to "Host a party", create_party_path, class:"btn btn-colorx" %> </a>
-  </div>
 </div>
 
 

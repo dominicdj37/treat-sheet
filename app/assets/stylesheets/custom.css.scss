@@ -1,17 +1,15 @@
 @import 'bootstrap/dist/css/bootstrap';
 
 .navbar {
-
-background-color: #2e1d00 !important;
-
+    background-color: #40007cb0 !important;
 }
 
-.btn-colorz {
+.btn-bg-dark {
     margin-bottom: 2%;
-    background-color: #2e1d00 !important;
+    background-color: #40007cb0 !important;
 }
 
-.btn-colorx {
+.btn-bg-light {
     background-color: #ffffff !important;
 }
 
@@ -19,40 +17,46 @@ background-color: #2e1d00 !important;
     color: #ffffff;
 }
 
-
 .party-list-div{
-    margin-top: 2%;
-    margin-left: 10%;
-    margin-right: 10%;
+    flex: 2;
+    padding: 30px;
+    overflow: hidden;
+    height: 100vh;
+    opacity: 50%;
+    overflow-y: scroll;
 }
-
-.fill-img {
-    background: url('header_image.jpg');
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.create-party {
+    flex: 1;
+    float: left;
+    padding: 30px;
 }
-
-.title_text {
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+.wrapper {
+    display: flex;
 }
 
 
-// .navbar-brand {
 
-// font-size: 3rem;
+@media only screen and (max-width: 640px) {
 
-// }
+    .wrapper {
+        display: block;
+    }
 
- 
+    .party-list-div{
+        width: 100%;
+        height: 100%;
+    }
+    .create-party {
+        width: 100%;
+    }
 
-// h1 {
+}
 
-// color: red;
-
-// }
+.container {
+    background-image: image-url('party_bg.jpg');
+    background-repeat: repeat-y;
+    padding: 0%;
+    object-fit: cover;
+    background-size: 100%;
+    max-width: 100%;
+}
