@@ -1,35 +1,33 @@
 <div class="wrapper">
 
-<div class="create-party">
-    <a> <%= link_to "Host a party", create_party_path, class:"btn btn-dark btn-block btn-bg-dark" %> </a>
-</div>
+  <div class="left">
+    <div class="create-party">
+       <a> <%= link_to "Host a party", create_party_path, class:"btn btn-dark btn-block btn-bg-dark" %> </a>
+    </div>
+  </div>  
 
-<div class="party-list-div">
-<table class="table table-light table-hover">
-  <thead class="table-dark">
-    <tr>
-      <th>Host</th>
-      <th>Venue</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <div class="right">
+    <div class="party-list-div">
+    <table class="table table-dark custom-table">
+      <thead class="thead-dark>
+        <tr>
+          <th>Host</th>
+          <th>Venue</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-  <tbody>
-    <% @treats.each do |treat| %>
-      <tr>
-        <td><%= treat.by_name %></td>
-        <td><%= treat.venue %></td>
-        <td><%= link_to 'Show' %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-
-
-
-</div>
-
+      <tbody>
+        <% @treats.each do |treat| %>
+          <tr>
+            <td><%= treat.by_name %></td>
+            <td><%= treat.venue %></td>
+            <td><%= link_to 'Delete', delete_party_path(id: treat.id)%></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
 
 </div>
 

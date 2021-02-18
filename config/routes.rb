@@ -7,7 +7,9 @@ Rails.application.routes.draw do
 
   get '/parties', to: 'party#index' 
   get 'create_party', to: 'home#create_party' 
+  
   root 'home#index'
 
+  get 'delete_party/:id', to: 'home#destroy', as: 'delete_party'
 
 end
