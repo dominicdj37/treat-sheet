@@ -21,7 +21,7 @@ module TreatSheet
     
     
     # config.active_job.queue_adapter = Rails.environments.production? ? :sidekiq : :async
-    config.active_job.queue_adapter = :async
+    config.active_job.queue_adapter = :sidekiq
     
   end
 end
